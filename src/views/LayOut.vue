@@ -5,7 +5,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6"> 测试平台 </v-list-item-title>
-          <v-list-item-subtitle> Owen </v-list-item-subtitle>
+          <v-list-item-subtitle> 南极星 </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
@@ -27,7 +27,7 @@
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>owen玩玩测试平台</v-app-bar-title>
+      <v-app-bar-title>南极星测试平台</v-app-bar-title>
     </v-app-bar>
 
     <v-main>
