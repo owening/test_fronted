@@ -1,43 +1,41 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import Layout from '../views/LayOut.vue'
-import Testcase from '../views/TestCase.vue'
-import Testtask from '../views/TestTask.vue'
-import Testreport from '../views/TestReport.vue'
-
+import { createRouter, createWebHashHistory } from "vue-router";
+import Layout from "../views/LayOut.vue";
+import Testcase from "../views/TestCase.vue";
+import Testreport from "../views/TestReport.vue";
+import Testtask from "../views/TestTask.vue";
 
 const routes = [
   {
-    path: '/',
-    redirect: '/layout',
+    path: "/",
+    redirect: "/layout/case",
   },
   {
-    path: '/layout',
-    name: 'layout',
+    path: "/layout",
+    name: "layout",
     component: Layout,
     children: [
       {
-        path: 'case',
-        name: 'case',
-        component: Testcase
+        path: "case",
+        name: "case",
+        component: Testcase,
       },
       {
-        path: 'task',
-        name: 'task',
-        component: Testtask
+        path: "task",
+        name: "task",
+        component: Testtask,
       },
       {
-        path: 'report',
-        name: 'report',
-        component: Testreport
+        path: "report",
+        name: "report",
+        component: Testreport,
       },
-    ]
+    ],
   },
-  
-]
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
